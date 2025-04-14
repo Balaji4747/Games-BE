@@ -1,0 +1,20 @@
+mutation CashOut($input: CashOutInput!) {
+  players {
+    cashOut(input: $input) {
+      gameId
+      roundId
+      betId
+      playerId
+      payout
+      payoutMultiplier
+      gameCode
+      currency
+      betAmount
+      gameMode
+      cashOutAt
+      btnIndex
+      avatar
+      createdAt
+    }
+  }
+}

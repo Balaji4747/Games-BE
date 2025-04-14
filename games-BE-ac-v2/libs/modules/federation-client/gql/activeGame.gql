@@ -1,0 +1,33 @@
+query ActiveGame($input: ActiveGameInput!) {
+  players {
+    activeGame(input: $input) {
+      gameId
+      roundId
+      status
+      currentMultiplier
+      nextGameHashedSeed
+      bets {
+        betId
+        roundId
+        betAmount
+        playerId
+        gameMode
+        gameCode
+        currency
+        betStatus
+        cashOutAt
+        btnIndex
+        payout
+        payoutMultiplier
+        avatar
+        createdAt
+      }
+      gameEndIn
+      gameMode
+      numbers
+      startTime
+      delay
+      acceptBetDelay
+    }
+  }
+}

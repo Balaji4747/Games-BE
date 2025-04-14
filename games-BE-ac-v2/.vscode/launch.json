@@ -1,0 +1,113 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "mines-sim",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node-dev",
+      "restart": true,
+      "runtimeArgs": ["-r", "tsconfig-paths/register", "--respawn"],
+      "args": ["apps/commander/src/main.ts", "minesSim"],
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "sourceMaps": true,
+      "console": "internalConsole",
+      "outputCapture": "std",
+      "env": { "SERVICE": "commander" }
+    },
+    {
+      "name": "plinko",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node-dev",
+      "restart": true,
+      "args": ["apps/plinko/src/main.ts"],
+      "runtimeArgs": ["-r", "tsconfig-paths/register", "--respawn"],
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "sourceMaps": true,
+      "console": "internalConsole",
+      "outputCapture": "std",
+      "env": { "SERVICE": "plinko" }
+    },
+    {
+      "name": "management",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node-dev",
+      "restart": true,
+      "args": ["apps/management/src/main.ts"],
+      "runtimeArgs": ["-r", "tsconfig-paths/register", "--respawn"],
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "sourceMaps": true,
+      "console": "internalConsole",
+      "outputCapture": "std",
+      "env": { "SERVICE": "management" }
+    },
+    {
+      "name": "plinko-sim",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node-dev",
+      "restart": true,
+      "runtimeArgs": ["-r", "tsconfig-paths/register", "--respawn"],
+      "args": ["apps/commander/src/main.ts", "plinkoSim"],
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "sourceMaps": true,
+      "console": "internalConsole",
+      "outputCapture": "std",
+      "env": { "SERVICE": "commander" }
+    },
+    {
+      "name": "limbo",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node-dev",
+      "restart": true,
+      "args": ["apps/limbo/src/main.ts"],
+      "runtimeArgs": ["-r", "tsconfig-paths/register", "--respawn"],
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "sourceMaps": true,
+      "console": "internalConsole",
+      "outputCapture": "std",
+      "env": { "SERVICE": "limbo" }
+    },
+    {
+      "name": "diamond-sim",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node-dev",
+      "restart": true,
+      "runtimeArgs": ["-r", "tsconfig-paths/register", "--respawn"],
+      "args": ["apps/commander/src/main.ts", "diamondSim"],
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "sourceMaps": true,
+      "console": "internalConsole",
+      "outputCapture": "std",
+      "env": { "SERVICE": "commander" }
+    },
+    {
+      "name": "gateway-ws",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node-dev",
+      "restart": true,
+      "args": ["apps/gateway-ws/src/main.ts"],
+      "runtimeArgs": ["-r", "tsconfig-paths/register", "--respawn"],
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "sourceMaps": true,
+      "console": "internalConsole",
+      "outputCapture": "std",
+      "env": { "SERVICE": "gateway-ws" }
+    }
+  ]
+}

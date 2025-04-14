@@ -1,0 +1,16 @@
+SERVICE=hilo
+APP_NAME=hilo
+
+APP_PORT=3015
+NODE_ENV=local
+
+MONGODB_URI=mongodb://127.0.0.1:27017/ProvablyFairNew
+
+REDIS_HOST=localhost
+REDIS_PORT=6379
+
+LOG_LEVEL_APP=debug
+
+RGS_URL=http://localhost:3000/api/provfair
+
+JWT_SECRET=p4sasdasda312ta.wrwerw1th-b0logn3s3-s@asuce

@@ -1,0 +1,1 @@
+export const PLAYERS_SERVICE = 'PLAYERS_SERVICE';

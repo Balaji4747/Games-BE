@@ -1,0 +1,8 @@
+node_modules
+dist
+infrastructure
+docs
+.vscode
+.husky
+.yarn
+.env*

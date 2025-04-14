@@ -1,0 +1,22 @@
+mutation BetPlace($input: BetPlaceInput!) {
+  players {
+    betPlace(input: $input) {
+      gameId
+      roundId
+      betId
+      playerId
+      payout
+      payoutMultiplier
+      balance
+      gameCode
+      currency
+      betAmount
+      gameMode
+      btnIndex
+      cashOutAt
+      avatar
+      targetMultiplier
+      createdAt
+    }
+  }
+}

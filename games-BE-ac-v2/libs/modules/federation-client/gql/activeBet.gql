@@ -1,0 +1,20 @@
+query ActiveBet {
+  players {
+    activeBet {
+      betId
+      roundId
+      gameMode
+      payout
+      payoutMultiplier
+      betAmount
+      gameCode
+      active
+      createdAt
+      state {
+        rounds
+        startCard
+        mineCount
+      }
+    }
+  }
+}

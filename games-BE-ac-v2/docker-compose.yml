@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  gamebe-aviatorx:
+    image: gamebe-aviatorx:latest
+    container_name: gamebe-aviatorx
+    env_file:
+      - .env.aviatorx.local
+    ports:
+      - 3003:3003
+    restart: unless-stopped

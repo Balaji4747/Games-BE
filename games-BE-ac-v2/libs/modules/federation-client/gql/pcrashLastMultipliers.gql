@@ -1,0 +1,8 @@
+query pcrashLastMultipliers($gameMode: String!) {
+  pcrash {
+    lastMultipliers(gameMode: $gameMode) {
+      roundId
+      crashMultiplier
+    }
+  }
+}

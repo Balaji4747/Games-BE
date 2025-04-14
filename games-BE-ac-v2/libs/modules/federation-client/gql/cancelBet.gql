@@ -1,0 +1,19 @@
+mutation CancelBet($input: CancelBetInput!) {
+  players {
+    cancelBet(input: $input) {
+      gameId
+      roundId
+      betId
+      playerId
+      payout
+      payoutMultiplier
+      gameCode
+      currency
+      betAmount
+      gameMode
+      cashOutAt
+      btnIndex
+      avatar
+    }
+  }
+}

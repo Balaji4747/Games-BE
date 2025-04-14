@@ -1,0 +1,1 @@
+export const FRAMEWORK_TYPE = 'FRAMEWORK_TYPE';

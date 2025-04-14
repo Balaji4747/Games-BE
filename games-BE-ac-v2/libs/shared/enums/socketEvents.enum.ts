@@ -1,0 +1,23 @@
+export enum SocketEvents {
+  PLACE_BET = 'PLACE_BET',
+  PLACE_BET_RESPONSE = 'PLACE_BET_RESPONSE', // sent to specific user
+
+  CANCEL_BET = 'CANCEL_BET',
+  CANCEL_BET_RESPONSE = 'CANCEL_BET_RESPONSE', // sent to specific user
+
+  CASH_OUT = 'CASH_OUT',
+  CASHOUT_RESPONSE = 'CASHOUT_RESPONSE', // sent to specific user
+  SLIDE_CASHOUT_RESPONSE = 'SLIDE_CASHOUT_RESPONSE', // sent to specific user
+
+  JOIN_ROOM = 'JOIN_ROOM',
+  LEAVE_ROOM = 'LEAVE_ROOM',
+  GAME_STATS = 'GAME_STATS',
+  ACTIVE_BET = 'ACTIVE_BET',
+  LAST_MULTIPLIERS = 'LAST_MULTIPLIERS',
+
+  USER_BALANCE_UPDATE = 'USER_BALANCE_UPDATE', // sent to specific user
+
+  BALANCE_UPDATE_RESULT = 'BALANCE_UPDATE_RESULT', // For RGS to emit this
+
+  CASHED_OUT = 'CASHED_OUT',
+}

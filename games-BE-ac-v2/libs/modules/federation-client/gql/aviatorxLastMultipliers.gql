@@ -1,0 +1,8 @@
+query aviatorxLastMultipliers($gameMode: String!) {
+  aviatorx {
+    lastMultipliers(gameMode: $gameMode) {
+      roundId
+      crashMultiplier
+    }
+  }
+}
